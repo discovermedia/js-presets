@@ -1,4 +1,4 @@
-const tcomb = require('babel-plugin-tcomb');
+const tcomb = require('babel-plugin-tcomb').default;
 const dmiFlow = require('@discovermedia/babel-preset-flow');
 
 const reactOpts = {
