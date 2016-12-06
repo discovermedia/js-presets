@@ -1,3 +1,5 @@
+'use strict';
+
 const projectDir = process.cwd();
 
 module.exports = {

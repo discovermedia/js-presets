@@ -1,37 +1,39 @@
 const tcomb = require('babel-plugin-tcomb').default;
 const dmiFlow = require('@discovermedia/babel-preset-flow');
 
-const reactOpts = {
-    globals: [
-        {
-            Class: true
-        },
-        {
-            SyntheticEvent: true,
-            React$Component: true,
-            React$Element: true,
-            ReactClass: true
-        }
-    ]
-};
-
 function preset(context, opts) {
     const react = opts && !!opts.react;
+    const warnOnFailure = (process.env.NODE_ENV === 'test') || (opts && !!opts.warnOnFailure);
 
     const presets = [dmiFlow];
 
-    const tcombOpts = react ? reactOpts : {};
+    const reactOpts = {
+        warnOnFailure: warnOnFailure,
+        globals: [
+            {
+                Class: true
+            },
+            {
+                SyntheticEvent: true,
+                React$Component: true,
+                React$Element: true,
+                ReactClass: true
+            }
+        ]
+    };
 
-    const env = {
-        development: {
-            plugins: [
-                [tcomb, tcombOpts],
-            ],
-        }
-    }
+    const tcombOpts = react ? reactOpts : {
+        warnOnFailure: warnOnFailure,
+    };
+
+    const plugins = (process.env.NODE_ENV !== 'production') ?
+        [
+            [tcomb, tcombOpts],
+        ] : [];
+
     return {
         presets: presets,
-        env: env
+        plugins: plugins
     };
 }
 

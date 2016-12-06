@@ -1,3 +1,5 @@
+'use strict';
+
 const es2015Parameters = require('babel-plugin-transform-es2015-parameters');
 const es2015Destructuring = require('babel-plugin-transform-es2015-destructuring');
 const objectRestSpread = require('babel-plugin-transform-object-rest-spread');

@@ -1,3 +1,5 @@
+'use strict';
+
 const flowStripTypes = require('babel-plugin-transform-flow-strip-types');
 
 function preset(context, opts) {
