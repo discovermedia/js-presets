@@ -1,6 +1,6 @@
 {
   "name": "@discovermedia/babel-preset-flow-tcomb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@discovermedia/babel-preset-flow": "^1.0.0",
+    "@discovermedia/babel-preset-flow": "^1.0.1",
     "babel-plugin-tcomb": "^0.3.24",
     "tcomb": "^3.2.15"
   }
