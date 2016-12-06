@@ -1,4 +1,5 @@
 const tcomb = require('babel-plugin-tcomb');
+const dmiFlow = require('@discovermedia/babel-preset-flow');
 
 const reactOpts = {
     globals: [
@@ -17,7 +18,7 @@ const reactOpts = {
 function preset(context, opts) {
     const react = opts && !!opts.react;
 
-    const presets = [require('@discovermedia/babel-preset-flow')];
+    const presets = [dmiFlow];
 
     const tcombOpts = react ? reactOpts : {};
 

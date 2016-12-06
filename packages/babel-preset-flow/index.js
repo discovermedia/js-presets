@@ -1,4 +1,4 @@
-const flowStripTypes = require('transform-flow-strip-types');
+const flowStripTypes = require('babel-plugin-transform-flow-strip-types');
 
 function preset(context, opts) {
     const plugins = [
