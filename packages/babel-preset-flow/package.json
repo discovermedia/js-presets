@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "@discovermedia/babel-base-packages": "^1.0.1",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-tcomb": "^0.3.24",
     "babel-plugin-transform-flow-strip-types": "^6.18.0",
-    "flow-bin": "^0.36.0"
+    "tcomb": "^3.2.15"
   }
 }

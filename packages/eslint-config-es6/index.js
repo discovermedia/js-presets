@@ -1,11 +1,10 @@
 'use strict';
 
-const projectDir = process.cwd();
+var projectDir = process.cwd();
 
 module.exports = {
-    parser: 'babel-eslint',
-    plugins: ['flowtype', 'promise', 'no-async-without-await'],
-    extends: ['airbnb-base', 'plugin:flowtype/recommended'],
+    plugins: ['promise', 'no-async-without-await'],
+    'extends': ['airbnb-base'],
     rules: {
         /**
          * Airbnb overrides
@@ -14,8 +13,8 @@ module.exports = {
             {
                 SwitchCase: 1,
                 VariableDeclarator: 1,
-                outerIIFEBody: 1,
-            },
+                outerIIFEBody: 1
+            }
         ],
 
         'max-len': ['error', 110, 2,
@@ -24,23 +23,23 @@ module.exports = {
                 ignoreComments: false,
                 ignoreTrailingComments: true,
                 ignoreStrings: true,
-                ignoreTemplateLiterals: true,
-            },
+                ignoreTemplateLiterals: true
+            }
         ],
 
         'quote-props': ['error', 'as-needed',
             {
                 keywords: false,
                 unnecessary: true,
-                numbers: true,
-            },
+                numbers: true
+            }
         ],
 
         quotes: ['error', 'single',
             {
                 avoidEscape: true,
-                allowTemplateLiterals: true,
-            },
+                allowTemplateLiterals: true
+            }
         ],
 
         // Always require brackets because it is easier to extend later
@@ -56,9 +55,9 @@ module.exports = {
             {
                 devDependencies: [
                     '**/*.test.js',
-                    `!${projectDir}/src/**/*`,
-                ],
-            },
+                    '!' + projectDir + '/src/**/*'
+                ]
+            }
         ],
 
         /**
@@ -75,14 +74,8 @@ module.exports = {
         'promise/avoid-new': 'off',
 
         /**
-         * Flowtype
-         */
-        'flowtype/type-id-match': ['error', '^([A-Z][A-Za-z0-9]+)+Type$'],
-        'flowtype/object-type-delimiter': ['error', 'comma'],
-
-        /**
          * no async without await
          */
-        'no-async-without-await/no-async-without-await': 'error',
-    },
+        'no-async-without-await/no-async-without-await': 'error'
+    }
 };
