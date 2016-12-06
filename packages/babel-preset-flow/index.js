@@ -1,6 +1,8 @@
+const flowStripTypes = require('transform-flow-strip-types');
+
 function preset(context, opts) {
     const plugins = [
-        require('transform-flow-strip-types'),
+        flowStripTypes,
     ];
 
     return {
@@ -10,7 +12,7 @@ function preset(context, opts) {
 
 module.exports = preset({});
 
-Object.defineProperty(module.exports, "buildPreset", {
+Object.defineProperty(module.exports, 'buildPreset', {
     configurable: true,
     writable: true,
     enumerable: false,

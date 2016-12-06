@@ -1,3 +1,5 @@
+const tcomb = require('babel-plugin-tcomb');
+
 const reactOpts = {
     globals: [
         {
@@ -22,8 +24,8 @@ function preset(context, opts) {
     const env = {
         development: {
             plugins: [
-                [require('babel-plugin-tcomb'), tcombOpts],
-            ]
+                [tcomb, tcombOpts],
+            ],
         }
     }
     return {
@@ -34,7 +36,7 @@ function preset(context, opts) {
 
 module.exports = preset({});
 
-Object.defineProperty(module.exports, "buildPreset", {
+Object.defineProperty(module.exports, 'buildPreset', {
     configurable: true,
     writable: true,
     enumerable: false,
