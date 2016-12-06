@@ -1,0 +1,17 @@
+{
+  "name": "@discovermedia/babel-preset-flow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discovermedia/babel-base-packages": "^1.0.0",
+    "babel-plugin-transform-flow-strip-types": "^6.18.0",
+    "flow-bin": "^0.36.0"
+  }
+}

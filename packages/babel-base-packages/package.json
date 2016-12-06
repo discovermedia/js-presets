@@ -1,0 +1,18 @@
+{
+  "name": "@discovermedia/babel-base-packages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-register": "^6.18.0",
+    "babel-runtime": "^6.18.0"
+  }
+}
