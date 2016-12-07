@@ -1,9 +1,9 @@
 'use strict';
 
 var presetEs2015 = require('babel-preset-es2015');
-var transformJscript = require('transform-jscript');
-var transformEs3MemberExpressionLiterals = require('transform-es3-member-expression-literals');
-var transformEs3PropertyLiterals = require('transform-es3-property-literals');
+var transformJscript = require('babel-plugin-transform-jscript');
+var transformEs3MemberExpressionLiterals = require('babel-plugin-transform-es3-member-expression-literals');
+var transformEs3PropertyLiterals = require('babel-plugin-transform-es3-property-literals');
 
 var startEnv = process.env.NODE_ENV;
 
