@@ -6,7 +6,7 @@ var transformReactConstantElements = require('babel-plugin-transform-react-const
 var transformReactInlineElements = require('babel-plugin-transform-react-inline-elements');
 var transformReactJsxSelf = require('babel-plugin-transform-react-jsx-self');
 var transformReactJsxSource = require('babel-plugin-transform-react-jsx-source');
-var transformReactRemovePropTypes = require('babel-plugin-transform-react-remove-prop-types');
+var transformReactRemovePropTypes = require('babel-plugin-transform-react-remove-prop-types').default;
 
 function preset() {
     var presets = [presetReact];
