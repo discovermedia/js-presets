@@ -1,6 +1,6 @@
 {
   "name": "@discovermedia/bundle-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@discovermedia/babel-preset-react": "^1.0.2",
+    "@discovermedia/babel-preset-react": "^1.0.3",
     "@discovermedia/eslint-config-react": "^1.0.1"
   }
 }
