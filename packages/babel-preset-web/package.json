@@ -10,10 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@discovermedia/babel-base-packages": "^1.0.2",
-    "babel-plugin-transform-es3-member-expression-literals": "^6.8.0",
-    "babel-plugin-transform-es3-property-literals": "^6.8.0",
-    "babel-plugin-transform-jscript": "^6.8.0",
-    "babel-preset-es2015": "^6.18.0"
+    "@discovermedia/babel-base-packages": "1.0.2",
+    "babel-plugin-transform-es3-member-expression-literals": "6.8.0",
+    "babel-plugin-transform-es3-property-literals": "6.8.0",
+    "babel-plugin-transform-jscript": "6.8.0",
+    "babel-preset-es2015": "6.18.0"
   }
 }

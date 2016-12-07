@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@discovermedia/babel-preset-web": "^1.0.2",
-    "@discovermedia/eslint-config-es6": "^1.0.1"
+    "@discovermedia/babel-preset-web": "1.0.2",
+    "@discovermedia/eslint-config-es6": "1.0.1"
   }
 }

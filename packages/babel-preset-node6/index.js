@@ -5,12 +5,14 @@ var transformEs2015Destructuring = require('babel-plugin-transform-es2015-destru
 var transformObjectRestSpread = require('babel-plugin-transform-object-rest-spread');
 var transformEs2015ModulesCommonjs = require('babel-plugin-transform-es2015-modules-commonjs');
 var transformAsyncToGenerator = require('babel-plugin-transform-async-to-generator');
+var syntaxAsyncFunctions = require('babel-plugin-syntax-async-functions');
 
 function preset(context, opts) {
     var loose = opts && !!opts.loose;
     var useBuiltIns = (opts && opts.useBuiltIns) ? !!opts.useBuiltIns : true;
 
     var plugins = [
+        syntaxAsyncFunctions,
         transformAsyncToGenerator,
         transformEs2015Parameters,
         [transformEs2015Destructuring, { loose: loose }],

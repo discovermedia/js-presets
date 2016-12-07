@@ -10,8 +10,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@discovermedia/eslint-base-packages": "^1.0.1",
-    "eslint-plugin-no-async-without-await": "^1.2.0",
-    "eslint-plugin-promise": "^3.4.0"
+    "@discovermedia/eslint-base-packages": "1.0.1",
+    "eslint-plugin-no-async-without-await": "1.2.0",
+    "eslint-plugin-promise": "3.4.0"
   }
 }

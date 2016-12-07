@@ -10,14 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@discovermedia/babel-base-packages": "^1.0.2",
-    "@discovermedia/babel-preset-web": "^1.0.2",
-    "babel-plugin-flow-react-proptypes": "^0.18.1",
-    "babel-plugin-transform-react-constant-elements": "^6.9.1",
-    "babel-plugin-transform-react-inline-elements": "^6.8.0",
-    "babel-plugin-transform-react-jsx-self": "^6.11.0",
-    "babel-plugin-transform-react-jsx-source": "^6.9.0",
-    "babel-plugin-transform-react-remove-prop-types": "^0.2.11",
-    "babel-preset-react": "^6.16.0"
+    "@discovermedia/babel-base-packages": "1.0.2",
+    "@discovermedia/babel-preset-web": "1.0.2",
+    "babel-plugin-flow-react-proptypes": "0.18.1",
+    "babel-plugin-transform-react-constant-elements": "6.9.1",
+    "babel-plugin-transform-react-inline-elements": "6.8.0",
+    "babel-plugin-transform-react-jsx-self": "6.11.0",
+    "babel-plugin-transform-react-jsx-source": "6.9.0",
+    "babel-plugin-transform-react-remove-prop-types": "0.2.11",
+    "babel-preset-react": "6.16.0"
   }
 }
