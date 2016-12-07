@@ -25,7 +25,8 @@ function preset() {
             // defaults to true, errors if set
             // modules: true,
             loose: false,
-            spec: true
+            // seems to break stuff
+            spec: false
         }]
     ];
 
