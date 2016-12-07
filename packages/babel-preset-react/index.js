@@ -2,7 +2,7 @@
 
 var presetReact = require('babel-preset-react');
 var pluginFlowReactPropTypes = require('babel-plugin-flow-react-proptypes');
-var transformReactConstantElements = require('babel-plugin-transform-react-constant-elements');
+// var transformReactConstantElements = require('babel-plugin-transform-react-constant-elements');
 var transformReactInlineElements = require('babel-plugin-transform-react-inline-elements');
 var transformReactJsxSelf = require('babel-plugin-transform-react-jsx-self');
 var transformReactJsxSource = require('babel-plugin-transform-react-jsx-source');
@@ -21,9 +21,13 @@ function preset() {
         },
         production: {
             plugins: [
-                transformReactConstantElements,
-                transformReactInlineElements,
-                transformReactRemovePropTypes
+                transformReactRemovePropTypes,
+                /**
+                 * Re-enable when bugs are fixed
+                 * https://github.com/facebookincubator/create-react-app/issues/553
+                 */
+                // transformReactConstantElements,
+                transformReactInlineElements
             ]
         }
     };

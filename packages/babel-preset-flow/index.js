@@ -10,7 +10,7 @@ function preset(context, opts) {
     var warnOnFailure;
     var reactOpts;
     var tcombOpts;
-    var plugins;
+    var env;
 
     if (process.env.NODE_ENV === 'test') {
         warnOnFailure = true;
@@ -39,17 +39,31 @@ function preset(context, opts) {
         warnOnFailure: warnOnFailure
     };
 
-    plugins = (process.env.NODE_ENV !== 'production') ? [
-        pluginSyntaxFlow,
-        [pluginTcomb, tcombOpts],
-        transformFlowStripTypes
-    ] : [
-        pluginSyntaxFlow,
-        transformFlowStripTypes
-    ];
+    env = {
+        development: {
+            plugins: [
+                pluginSyntaxFlow,
+                [pluginTcomb, tcombOpts],
+                transformFlowStripTypes
+            ]
+        },
+        production: {
+            plugins: [
+                pluginSyntaxFlow,
+                transformFlowStripTypes
+            ]
+        },
+        test: {
+            plugins: [
+                pluginSyntaxFlow,
+                [pluginTcomb, tcombOpts],
+                transformFlowStripTypes
+            ]
+        }
+    };
 
     return {
-        plugins: plugins
+        env: env
     };
 }
 
