@@ -45,9 +45,11 @@ function preset() {
         }
     };
 
+    var plugins = environments[env] ? environments[env].plugins : [];
+
     return {
         presets: presets,
-        plugins: environments[env]
+        plugins: plugins
     };
 }
 

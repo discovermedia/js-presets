@@ -20,6 +20,7 @@ function preset(context, opts) {
     var warnOnFailure;
     var reactOpts;
     var tcombOpts;
+    var plugins;
     var environments;
 
     if (process.env.NODE_ENV === 'test') {
@@ -72,8 +73,10 @@ function preset(context, opts) {
         }
     };
 
+    plugins = environments[env] ? environments[env].plugins : [];
+
     return {
-        plugins: environments[env]
+        plugins: plugins
     };
 }
 
