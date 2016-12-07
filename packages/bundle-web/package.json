@@ -1,6 +1,6 @@
 {
   "name": "@discovermedia/bundle-web",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,6 @@
   "dependencies": {
     "@discovermedia/babel-preset-web": "^1.0.3",
     "@discovermedia/eslint-config-es6": "^1.0.2",
-    "stylelint-config-dmi": "^1.0.1"
+    "stylelint-config-dmi": "^1.0.2"
   }
 }
