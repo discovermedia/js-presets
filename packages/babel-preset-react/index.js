@@ -8,17 +8,18 @@ var transformReactJsxSelf = require('babel-plugin-transform-react-jsx-self');
 var transformReactJsxSource = require('babel-plugin-transform-react-jsx-source');
 var transformReactRemovePropTypes = require('babel-plugin-transform-react-remove-prop-types').default;
 
-var env = process.env.NODE_ENV;
+var startEnv = process.env.NODE_ENV;
 
-if (env !== 'development' && env !== 'test' && env !== 'production') {
+if (startEnv !== 'development' && startEnv !== 'test' && startEnv !== 'production') {
     throw new Error(
         'Using `@discovermedia/babel-preset-react` requires that you specify `NODE_ENV`' +
         'environment variable. Valid values are "development", ' +
-        '"test", and "production". Instead, received: ' + JSON.stringify(env) + '.'
+        '"test", and "production". Instead, received: ' + JSON.stringify(startEnv) + '.'
     );
 }
 
 function preset() {
+    var env = process.env.NODE_ENV;
     var presets = [presetReact];
 
     var environments = {

@@ -5,17 +5,8 @@ var pluginSyntaxFlow = require('babel-plugin-syntax-flow');
 var transformFlowStripTypes = require('babel-plugin-transform-flow-strip-types');
 var pluginTcomb = require('babel-plugin-tcomb').default;
 
-var env = process.env.NODE_ENV;
-
-if (env !== 'development' && env !== 'test' && env !== 'production') {
-    throw new Error(
-        'Using `@discovermedia/babel-preset-flow` requires that you specify `NODE_ENV`' +
-        'environment variable. Valid values are "development", ' +
-        '"test", and "production". Instead, received: ' + JSON.stringify(env) + '.'
-    );
-}
-
 function preset(context, opts) {
+    var env = process.env.NODE_ENV || 'development';
     var react = opts && !!opts.react;
     var warnOnFailure;
     var reactOpts;
