@@ -1,5 +1,5 @@
 {
-  "name": "@discovermedia/stylelint-config-standard",
+  "name": "stylelint-config-dmi",
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
