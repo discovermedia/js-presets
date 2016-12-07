@@ -1,6 +1,7 @@
 'use strict';
 
 var presetReact = require('babel-preset-react');
+var presetDmiWeb = require('@discovermedia/babel-preset-web');
 var pluginFlowReactPropTypes = require('babel-plugin-flow-react-proptypes');
 // var transformReactConstantElements = require('babel-plugin-transform-react-constant-elements');
 var transformReactInlineElements = require('babel-plugin-transform-react-inline-elements');
@@ -20,7 +21,7 @@ if (startEnv !== 'development' && startEnv !== 'test' && startEnv !== 'productio
 
 function preset() {
     var env = process.env.NODE_ENV;
-    var presets = [presetReact];
+    var presets = [presetDmiWeb, presetReact];
 
     var environments = {
         development: {
