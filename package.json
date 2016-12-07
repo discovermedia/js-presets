@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@discovermedia/eslint-config-es3": "1.0.1",
+    "@discovermedia/eslint-config-es3": "^1.0.2",
     "lerna": "2.0.0-beta.30"
   }
 }

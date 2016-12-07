@@ -12,7 +12,7 @@
   "dependencies": {
     "@discovermedia/babel-base-packages": "^1.0.3",
     "@discovermedia/babel-preset-web": "^1.0.3",
-    "babel-plugin-flow-react-proptypes": "0.18.1",
+    "babel-plugin-flow-react-proptypes": "0.18.2",
     "babel-plugin-transform-react-constant-elements": "6.9.1",
     "babel-plugin-transform-react-inline-elements": "6.8.0",
     "babel-plugin-transform-react-jsx-self": "6.11.0",
