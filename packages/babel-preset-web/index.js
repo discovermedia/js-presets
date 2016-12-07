@@ -20,7 +20,8 @@ if (startEnv !== 'development' && startEnv !== 'test' && startEnv !== 'productio
 
 function preset() {
     var presets = [
-        [presetEs2015, {
+        // must specify .buildPreset https://github.com/babel/babel/blob/master/packages/babel-preset-latest/src/index.js#L11
+        [presetEs2015.buildPreset, {
             loose: false,
             modules: true,
             spec: true
