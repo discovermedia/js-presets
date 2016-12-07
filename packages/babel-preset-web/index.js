@@ -22,8 +22,9 @@ function preset() {
     var presets = [
         // must specify .buildPreset https://github.com/babel/babel/blob/master/packages/babel-preset-latest/src/index.js#L11
         [presetEs2015.buildPreset, {
+            // defaults to true, errors if set
+            // modules: true,
             loose: false,
-            modules: true,
             spec: true
         }]
     ];
