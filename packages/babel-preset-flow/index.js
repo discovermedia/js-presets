@@ -1,9 +1,9 @@
 'use strict';
 
-var syntaxFlow = require('babel-plugin-syntax-flow');
+var pluginSyntaxFlow = require('babel-plugin-syntax-flow');
 
-var flowStripTypes = require('babel-plugin-transform-flow-strip-types');
-var tcomb = require('babel-plugin-tcomb').default;
+var transformFlowStripTypes = require('babel-plugin-transform-flow-strip-types');
+var pluginTcomb = require('babel-plugin-tcomb').default;
 
 function preset(context, opts) {
     var react = opts && !!opts.react;
@@ -40,12 +40,12 @@ function preset(context, opts) {
     };
 
     plugins = (process.env.NODE_ENV !== 'production') ? [
-        syntaxFlow,
-        [tcomb, tcombOpts],
-        flowStripTypes
+        pluginSyntaxFlow,
+        [pluginTcomb, tcombOpts],
+        transformFlowStripTypes
     ] : [
-        syntaxFlow,
-        flowStripTypes
+        pluginSyntaxFlow,
+        transformFlowStripTypes
     ];
 
     return {

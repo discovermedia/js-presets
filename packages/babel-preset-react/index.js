@@ -1,10 +1,36 @@
 'use strict';
 
+var presetReact = require('babel-preset-react');
+var pluginFlowReactPropTypes = require('babel-plugin-flow-react-proptypes');
+var transformReactConstantElements = require('babel-plugin-transform-react-constant-elements');
+var transformReactInlineElements = require('babel-plugin-transform-react-inline-elements');
+var transformReactJsxSelf = require('babel-plugin-transform-react-jsx-self');
+var transformReactJsxSource = require('babel-plugin-transform-react-jsx-source');
+var transformReactRemovePropTypes = require('babel-plugin-transform-react-remove-prop-types');
+
 function preset() {
-    var plugins = [];
+    var presets = [presetReact];
+
+    var env = {
+        development: {
+            plugins: [
+                pluginFlowReactPropTypes,
+                transformReactJsxSelf,
+                transformReactJsxSource
+            ]
+        },
+        production: {
+            plugins: [
+                transformReactConstantElements,
+                transformReactInlineElements,
+                transformReactRemovePropTypes
+            ]
+        }
+    };
 
     return {
-        plugins: plugins
+        presets: presets,
+        env: env
     };
 }
 
