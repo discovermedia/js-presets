@@ -59,7 +59,9 @@ function preset(context, opts) {
             plugins: [
                 pluginSyntaxFlow,
                 // Currently has issues w/testing
-                // [pluginTcomb, tcombOpts],
+                // might need to in test env:
+                // "passPerPreset": true,
+                [pluginTcomb, tcombOpts],
                 transformFlowStripTypes
             ]
         }
