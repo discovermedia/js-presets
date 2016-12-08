@@ -8,16 +8,6 @@ var transformEs3PropertyLiterals = require('babel-plugin-transform-es3-property-
 var transformObjectRestSpread = require('babel-plugin-transform-object-rest-spread');
 var syntaxTrailingFunctionCommas = require('babel-plugin-syntax-trailing-function-commas');
 
-var startEnv = process.env.NODE_ENV;
-
-if (startEnv !== 'development' && startEnv !== 'test' && startEnv !== 'production') {
-    throw new Error(
-        'Using `@discovermedia/babel-preset-react` requires that you specify `NODE_ENV`' +
-        'environment variable. Valid values are "development", ' +
-        '"test", and "production". Instead, received: ' + JSON.stringify(startEnv) + '.'
-    );
-}
-
 function preset() {
     var presets = [
         // must specify .buildPreset https://github.com/babel/babel/blob/master/packages/babel-preset-latest/src/index.js#L11
