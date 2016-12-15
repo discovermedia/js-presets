@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-    'extends': '@discovermedia/eslint-config-es3'
+    'extends': './packages/eslint-config-es3/index.js'
 };
