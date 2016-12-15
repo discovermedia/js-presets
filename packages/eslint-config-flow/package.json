@@ -1,6 +1,6 @@
 {
   "name": "@discovermedia/eslint-config-flow",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@discovermedia/eslint-base-packages": "^1.1.0",
+    "@discovermedia/eslint-base-packages": "^1.1.1",
     "eslint-plugin-flowtype": "2.29.1"
   }
 }
