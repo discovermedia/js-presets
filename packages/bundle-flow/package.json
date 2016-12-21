@@ -12,6 +12,6 @@
   "dependencies": {
     "@discovermedia/babel-preset-flow": "^1.1.1",
     "@discovermedia/eslint-config-flow": "^1.1.1",
-    "flow-bin": "0.37.0"
+    "flow-bin": "0.37.4"
   }
 }
