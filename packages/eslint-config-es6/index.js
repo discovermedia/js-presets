@@ -48,6 +48,13 @@ module.exports = {
         // Always require parens because it is more consistent, especially with flow
         'arrow-parens': ['error', 'always'],
 
+        // Webstorm doesn't format async correctly. ignore async for compat
+        'space-before-function-paren': ['error', {
+            anonymous: 'always',
+            named: 'never',
+            asyncArrow: 'ignore'
+        }],
+
         /**
          * import
          */
