@@ -2,5 +2,5 @@
 
 module.exports = {
     parser: 'babel-eslint',
-    'extends': ['airbnb', './rules'],
+    'extends': ['airbnb', './rules.js'],
 };

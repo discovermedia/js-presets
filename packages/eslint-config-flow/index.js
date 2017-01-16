@@ -2,5 +2,5 @@
 
 module.exports = {
     parser: 'babel-eslint',
-    'extends': ['./rules'],
+    'extends': ['./rules.js'],
 };

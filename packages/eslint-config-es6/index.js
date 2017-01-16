@@ -3,5 +3,5 @@
 var projectDir = process.cwd();
 
 module.exports = {
-    'extends': ['airbnb-base', './rules'],
+    'extends': ['airbnb-base', './rules.js'],
 };

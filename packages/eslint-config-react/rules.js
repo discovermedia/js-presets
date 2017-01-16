@@ -2,7 +2,7 @@
 
 module.exports = {
     parser: 'babel-eslint',
-    'extends': ['@discovermedia/eslint-config-es6/rules'],
+    'extends': ['@discovermedia/eslint-config-es6/rules.js'],
     rules: {
         'react/jsx-indent-props': ['error', 4],
         'react/jsx-indent': ['error', 4],
