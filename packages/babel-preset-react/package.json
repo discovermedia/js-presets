@@ -1,6 +1,6 @@
 {
   "name": "@discovermedia/babel-preset-react",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@discovermedia/babel-base-packages": "^1.1.1",
-    "@discovermedia/babel-preset-web": "^1.1.1",
+    "@discovermedia/babel-base-packages": "^1.2.0",
+    "@discovermedia/babel-preset-web": "^1.2.0",
     "babel-plugin-flow-react-proptypes": "^0.20.0",
     "babel-plugin-transform-react-constant-elements": "^6.22.0",
     "babel-plugin-transform-react-inline-elements": "^6.22.0",
