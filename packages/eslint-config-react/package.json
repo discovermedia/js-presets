@@ -1,6 +1,6 @@
 {
   "name": "@discovermedia/eslint-config-react",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@discovermedia/eslint-base-packages": "^1.2.0",
-    "@discovermedia/eslint-config-es6": "^1.2.0",
+    "@discovermedia/eslint-config-es6": "1.3.0",
     "eslint-config-airbnb": "^14.0.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0"
