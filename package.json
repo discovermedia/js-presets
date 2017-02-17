@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "outdated": "npm outdated && lerna exec -- npm outdated",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish": "lerna publish --exact"
   },
   "keywords": [],
   "author": "",

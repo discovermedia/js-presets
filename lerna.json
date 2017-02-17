@@ -1,13 +1,15 @@
 {
-  "lerna": "2.0.0-beta.37",
-  "version": "independent",
-  "publishConfig": {
-    "ignore": [
-      "*.md",
-      "**/*.test.js"
+    "lerna": "2.0.0-beta.37",
+    "version": "independent",
+    "commands": {
+        "publishConfig": {
+            "ignore": [
+                "*.md",
+                "**/*.test.js"
+            ]
+        }
+    },
+    "packages": [
+        "packages/*"
     ]
-  },
-  "packages": [
-    "packages/*"
-  ]
 }
