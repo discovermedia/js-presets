@@ -4,5 +4,5 @@ module.exports = {
     ecmaFeatures: {
         ecmaVersion: 3
     },
-    'extends': ['airbnb-base/legacy', './rules.js'],
+    'extends': ['airbnb-base/legacy', './rules.js']
 };

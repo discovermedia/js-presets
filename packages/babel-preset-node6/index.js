@@ -28,4 +28,3 @@ Object.defineProperty(module.exports, 'buildPreset', {
     enumerable: false,
     value: preset
 });
-

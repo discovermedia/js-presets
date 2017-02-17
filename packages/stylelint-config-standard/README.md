@@ -5,7 +5,6 @@ module.exports = {
     rules: {},
 };
 ```
-
 Add the following to the project's package.json
 ```json
 {
