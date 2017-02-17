@@ -1,6 +1,6 @@
 {
   "name": "@discovermedia/babel-preset-flow",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@discovermedia/babel-base-packages": "1.4.0",
+    "@discovermedia/babel-base-packages": "1.4.1",
     "babel-plugin-syntax-flow": "6.18.0",
     "babel-plugin-tcomb": "0.3.24",
     "babel-plugin-transform-flow-strip-types": "6.22.0",
