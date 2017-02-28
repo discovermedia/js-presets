@@ -8,19 +8,26 @@ var transformEs3PropertyLiterals = require('babel-plugin-transform-es3-property-
 var transformObjectRestSpread = require('babel-plugin-transform-object-rest-spread');
 var syntaxTrailingFunctionCommas = require('babel-plugin-syntax-trailing-function-commas');
 
-function preset() {
-    var presets = [
+function preset(context, opts) {
+    var presets;
+    var plugins;
+
+    var options = {
+        loose: false,
+        // seems to break stuff
+        spec: false
+    };
+
+    if (opts && opts.modules === false) {
+        options.modules = false;
+    }
+
+    presets = [
         // must specify .buildPreset https://github.com/babel/babel/blob/master/packages/babel-preset-latest/src/index.js#L11
-        [presetEs2015.buildPreset, {
-            // defaults to true, errors if set
-            // modules: true,
-            loose: false,
-            // seems to break stuff
-            spec: false
-        }]
+        [presetEs2015.buildPreset, options]
     ];
 
-    var plugins = [
+    plugins = [
         syntaxTrailingFunctionCommas,
         // Requires separate polyfill
         [transformObjectRestSpread, { useBuiltIns: true }],

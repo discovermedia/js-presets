@@ -19,9 +19,9 @@ if (startEnv !== 'development' && startEnv !== 'test' && startEnv !== 'productio
     );
 }
 
-function preset() {
+function preset(context, opts) {
     var env = process.env.NODE_ENV;
-    var presets = [presetDmiWeb, presetReact];
+    var presets = [[presetDmiWeb, opts], presetReact];
 
     var environments = {
         development: {
