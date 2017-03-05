@@ -1,6 +1,6 @@
 {
   "name": "@discovermedia/bundle-web",
-  "version": "1.6.2",
+  "version": "1.7.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@discovermedia/babel-preset-web": "1.4.4",
-    "@discovermedia/eslint-config-es6": "1.6.0",
+    "@discovermedia/eslint-config-es6": "1.7.0",
     "@discovermedia/stylelint-config-standard": "1.3.0"
   }
 }

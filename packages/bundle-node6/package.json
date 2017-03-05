@@ -1,6 +1,6 @@
 {
   "name": "@discovermedia/bundle-node6",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "@discovermedia/babel-preset-node6": "1.4.2",
-    "@discovermedia/eslint-config-es6": "1.6.0"
+    "@discovermedia/eslint-config-es6": "1.7.0"
   }
 }

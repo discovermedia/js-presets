@@ -1,6 +1,6 @@
 {
   "name": "@discovermedia/bundle-flow",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@discovermedia/babel-preset-flow": "1.5.0",
-    "@discovermedia/eslint-config-flow": "1.4.0",
+    "@discovermedia/babel-preset-flow": "1.6.0",
+    "@discovermedia/eslint-config-flow": "1.5.0",
     "flow-bin": "0.41.0"
   }
 }
