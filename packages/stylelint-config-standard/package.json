@@ -9,9 +9,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "peerDependencies": {
+    "stylefmt": "^5.1.2",
+    "stylelint": "^7.9.0"
+  },
   "dependencies": {
-    "stylefmt": "5.1.2",
-    "stylelint": "7.9.0",
     "stylelint-config-standard": "16.0.0"
   }
 }
