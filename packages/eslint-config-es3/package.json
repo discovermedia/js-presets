@@ -1,6 +1,6 @@
 {
   "name": "@discovermedia/eslint-config-es3",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@discovermedia/eslint-base-packages": "2.1.1"
+    "@discovermedia/eslint-base-packages": "^3.0.0"
   }
 }

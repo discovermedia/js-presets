@@ -1,6 +1,6 @@
 {
   "name": "@discovermedia/eslint-config-react",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,14 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@discovermedia/eslint-base-packages": "2.1.1",
-    "@discovermedia/eslint-config-es6": "2.1.1",
-    "eslint-config-airbnb": "15.0.1",
-    "eslint-plugin-jsx-a11y": "5.1.0",
+    "@discovermedia/eslint-base-packages": "^3.0.0",
+    "@discovermedia/eslint-config-es6": "^3.0.0",
+    "eslint-config-airbnb": "15.1.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-react": "7.1.0"
   },
   "devDependencies": {
-    "eslint": "3.19.0",
-    "eslint-plugin-import": "2.6.0"
+    "eslint": "4.3.0",
+    "eslint-plugin-import": "2.7.0"
   }
 }
