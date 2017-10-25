@@ -54,6 +54,9 @@ module.exports = {
             asyncArrow: 'ignore'
         }],
 
+        // Too restrictive
+        'prefer-destructuring': 'off',
+
         /**
          * import
          */
