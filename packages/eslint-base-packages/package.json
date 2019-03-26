@@ -8,13 +8,10 @@
   },
   "author": "",
   "license": "ISC",
-  "peerDependencies": {
-    "eslint": "^4.9.0"
-  },
   "dependencies": {
     "babel-eslint": "^10.0.1",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.8.0"
+    "eslint-plugin-import": "^2.16.0"
   },
   "devDependencies": {
     "eslint": "^5.15.3"
