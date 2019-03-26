@@ -11,9 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "@discovermedia/eslint-base-packages": "4.0.2",
-    "eslint-plugin-flowtype": "^2.39.1"
+    "eslint-plugin-flowtype": "^3.4.2"
   },
   "devDependencies": {
-    "eslint": "^4.9.0"
+    "eslint": "^5.15.3"
   }
 }
