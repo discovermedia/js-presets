@@ -1,6 +1,6 @@
 {
   "name": "@discovermedia/eslint-base-packages",
-  "version": "4.0.2",
+  "version": "5.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
